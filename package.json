@@ -11,14 +11,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rimraf dist && tsc",
     "build:watch": "rimraf dist && tsc --watch",
-    "prepublish": "npm run test:e2e && npm run build",
+    "prepare": "npm run build",
     "test:e2e": "NODE_OPTIONS=--experimental-vm-modules jest --config test/jest-e2e.json"
   },
-  "author": "dmitriy-nz",
+  "author": "bkhalifeh",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dmitriy-nz/nestjs-form-data.git"
+    "url": "git+https://github.com/bkhalifeh/nestjs-form-data.git"
   },
   "devDependencies": {
     "@fastify/multipart": "^9.0.3",
